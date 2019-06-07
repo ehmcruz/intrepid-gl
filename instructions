@@ -1,0 +1,7 @@
+To compile the source-code, go to the src directory and type make.
+
+You'll get a file called intrepid-gl.a in the src directory.
+
+This is the one you should link to your project. Don't forget to include libgame.h located in the header directory.
+
+If you have any trouble, check out http://intrepid-gl.sourceforge.net

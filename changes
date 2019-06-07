@@ -1,0 +1,31 @@
+New Features:
+
+	- you are able to set the sensibility and qfactor of the pixel maps
+	- you are able to set an id to the walls, making them easier to be identified
+	- pack files
+	- new ways for loading images
+	- some data structures implemented as c++ templates... simple linked, double linked and simple circular linked lists for a while
+	- link video handlers, sharing the video memory when the same pictures are used
+	- menu itens: checkbox, radiobuttons, textbox
+
+/********************************************************************/
+
+Changed Features:
+
+	- lg_surface::create_text now has a parameter specifying the color of the text... we forgot to put this in the first release
+	- process physics calls a virtual function of lg_physics_obj when it collides with another obj. Its name is collision_obj, and it sends what obj have collided with
+	- physics, in the lg_phy_wall::check_coll, sends the wall too, when warning a object if a collision happened
+	- new way to set the scene background image, using lg_scene::set_back
+	- some C code that was being compiled with g++ is now being compiled with gcc
+	- lg_sprite and lg_surface uses less memory for storing the pixel maps
+
+/********************************************************************/
+
+Bugs solved:
+
+	- lg_surface doesn't rotate the objects
+	- error rendering scene background when the scene size was smaller than canvas
+	- in some aleatory ocasions the screen started flickering
+	- sometimes the objects appeared rotated on the screen
+	- some opengl issues
+
